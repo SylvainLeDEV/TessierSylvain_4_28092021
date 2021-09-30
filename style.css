@@ -7,6 +7,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+:root{
+    --principal : #6c2808;
+}
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -281,6 +285,19 @@ a:hover {
 .row.row-no-gutters > [class*=" col-"] {
     padding-right: 0;
     padding-left: 0;
+}
+
+.col-sm-4 > ul > li > a {
+    color: #fff!important;
+}
+
+.col-sm-6{
+    align-items: center;
+}
+
+.col-sm-6 > a > img {
+    height: 50%;
+    width: 100%;
 }
 
 #bloc-1-hero h1 {
@@ -785,7 +802,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: var(--principal);
 }
 
 .tc-white {
@@ -793,7 +810,7 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: var(--principal);
     color: #FFFFFF!important;
 }
 
@@ -977,7 +994,7 @@ h4 {
     }
     .navbar-brand img {
         max-height: 40px;
-        width: auto;
+        width: 100%;
     }
     .nav-invert .navbar-header {
         float: none;
