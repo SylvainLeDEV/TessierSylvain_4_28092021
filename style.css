@@ -305,6 +305,7 @@ a:hover {
     max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
+    width: 100%;
 }
 
 .navbar-brand img[src$=svg] {
@@ -509,6 +510,17 @@ button {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
 }
+
+img.center-block.image-resize-mode {
+    height: 100px;
+    width: 100px;
+}
+
+.img.img-responsive.portfolio-thumb {
+    height: auto;
+    max-width: 100%;
+}
+
 
 .scrollToTop {
     width: 40px;
@@ -741,6 +753,8 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    max-width: 100%;
+    height: auto;
 }
 
 .portfolio-row {
