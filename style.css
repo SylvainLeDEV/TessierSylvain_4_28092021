@@ -7,6 +7,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+:root{
+    --principal : #6c2808;
+}
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -91,7 +95,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper.webp");
     background-size: 280px 280px;
 }
 
@@ -283,6 +287,19 @@ a:hover {
     padding-left: 0;
 }
 
+.col-sm-4 > ul > li > a {
+    color: #fff!important;
+}
+
+.col-sm-6{
+    align-items: center;
+}
+
+.col-sm-6 > a > img {
+    height: 50%;
+    width: 100%;
+}
+
 #bloc-1-hero h1 {
     font-size: 32px;
 }
@@ -305,6 +322,7 @@ a:hover {
     max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
+    width: 100%;
 }
 
 .navbar-brand img[src$=svg] {
@@ -509,6 +527,17 @@ button {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
 }
+
+img.center-block.image-resize-mode {
+    height: 100px;
+    width: 100px;
+}
+
+.img.img-responsive.portfolio-thumb {
+    height: auto;
+    max-width: 100%;
+}
+
 
 .scrollToTop {
     width: 40px;
@@ -741,6 +770,8 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    max-width: 100%;
+    height: auto;
 }
 
 .portfolio-row {
@@ -761,7 +792,7 @@ h4 {
     font-weight: 900;
     text-decoration: underline!important;
 }
-
+/*----------Bloc-2-services ------*/
 .bgc-white {
     background-color: #FFFFFF;
 }
@@ -771,7 +802,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: var(--principal);
 }
 
 .tc-white {
@@ -779,7 +810,7 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: var(--principal);
     color: #FFFFFF!important;
 }
 
@@ -810,19 +841,19 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/dots-bg.webp");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("img/lines-h2-bg.webp");
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-banniere.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.webp");
 }
 
 @media (max-width: 1024px) {
@@ -963,7 +994,7 @@ h4 {
     }
     .navbar-brand img {
         max-height: 40px;
-        width: auto;
+        width: 100%;
     }
     .nav-invert .navbar-header {
         float: none;
