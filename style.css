@@ -8,7 +8,7 @@ body {
 }
 
 :root{
-    --principal : #F3976C;
+    --principal : black;
 }
 
 a,
@@ -815,8 +815,8 @@ h4 {
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: #fff!important;
+    color: black!important;
 }
 
 .ltc-white {
